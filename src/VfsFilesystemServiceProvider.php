@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Storage;
 use League\Flysystem\Filesystem;
 use Illuminate\Support\ServiceProvider as ServiceProvider;
 
+/**
+ * @codeCoverageIgnore
+ */
 class VfsFilesystemServiceProvider extends  ServiceProvider {
 
     //boot

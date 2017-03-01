@@ -118,7 +118,9 @@ class VirtualFilesystemAdapter extends Local {
     protected function ensureDirectory($path)
     {
         if ($path === $this->dirName){
+            // @codeCoverageIgnoreStart
             return;
+            // @codeCoverageIgnoreEnd
         }
         parent::ensureDirectory($path);
     }
