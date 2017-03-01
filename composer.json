@@ -1,0 +1,43 @@
+{
+    "name": "stechstudio/laravel-vfs-adapter",
+    "description": "Virtual Filesystem Storage Adapter for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "vfs",
+        "flysystem",
+        "php-vs",
+        "storage",
+        "adapter",
+        "lumen",
+        "laravel"
+    ],
+    "autoload": {
+        "classmap": [
+        ],
+        "psr-4": {
+            "STS\\Filesystem\\": "src"
+        },
+        "files": [
+        ]
+    },
+    "authors": [
+        {
+            "name": "Bubba Hines",
+            "email": "rob@stechstudio.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "league/flysystem": "^1.0",
+        "illuminate/support": "5.4.*",
+        "mikey179/vfsStream": "^1.6"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^5",
+      "symfony/var-dumper": "^3",
+      "ext-fileinfo": "*",
+      "mockery/mockery": "~0.9",
+      "phpspec/phpspec": "^2.2"
+    }
+}
