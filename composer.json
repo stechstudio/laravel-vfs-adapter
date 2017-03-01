@@ -30,7 +30,7 @@
     "minimum-stability": "dev",
     "require": {
         "league/flysystem": "^1.0",
-        "illuminate/support": "5.4.*",
+        "illuminate/support": "5.2.x|5.3.x|5.4.x",
         "mikey179/vfsStream": "^1.6",
         "satooshi/php-coveralls": "^1.0"
     },
