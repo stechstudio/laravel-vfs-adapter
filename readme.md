@@ -3,7 +3,7 @@ Sometimes, when we are testing, it would be very nice to just easily swap out th
 virtual files system like `mikey179/vfsStream`.
 
 ## Requirements
-This package has been tested against Laravel/Lumen versions 5.4. 
+This package has been tested against Laravel/Lumen versions 5.5. Check older versions of this package for older Laravel support.
 
 ## Installation
 
