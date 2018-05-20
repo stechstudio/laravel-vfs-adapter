@@ -4,8 +4,9 @@ use League\Flysystem\Config;
 use League\Flysystem\File;
 use League\Flysystem\FileNotFoundException;
 use League\Flysystem\Filesystem;
+use PHPUnit\Framework\TestCase;
 
-class FileTests extends \PHPUnit_Framework_TestCase
+class FileTests extends TestCase
 {
     /** @var Filesystem */
     protected $filesystem;
