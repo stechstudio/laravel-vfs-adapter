@@ -21,8 +21,9 @@ namespace League\Flysystem\Adapter
 namespace STS\Filesystem
 {
     use League\Flysystem\Config;
+    use PHPUnit\Framework\TestCase;
 
-    class FailTests extends \PHPUnit_Framework_TestCase
+    class FailTests extends TestCase
     {
         /** @test */
         public function ensure_we_fail_on_all_of_these()
