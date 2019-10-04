@@ -1,6 +1,7 @@
 <?php namespace STS\Filesystem;
 
 use Illuminate\Support\Collection;
+use Illuminate\Support\Str;
 use League\Flysystem\Adapter\Local;
 use org\bovigo\vfs\vfsStream;
 use org\bovigo\vfs\vfsStreamDirectory;
@@ -90,7 +91,7 @@ class VirtualFilesystemAdapter extends Local {
      */
     public function __get($name)
     {
-        $response = $this->config->get(snake_case($name));
+        $response = $this->config->get(Str::snake($name));
 
         if (is_null($response)){
             throw new \InvalidArgumentException(sprintf('%s is not a valid field.', $name));

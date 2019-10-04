@@ -1,5 +1,6 @@
 <?php namespace STS\Filesystem;
 
+use Illuminate\Support\Str;
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem;
 use org\bovigo\vfs\vfsStream;
@@ -53,7 +54,7 @@ class BasicTest extends TestCase {
         $adapter = new VirtualFilesystemAdapter($this->confg_1);
         collect($this->confg_1)->each(
             function ($value, $key) use ($adapter) {
-                $this->assertEquals($value, $adapter->{camel_case($key)});
+                $this->assertEquals($value, $adapter->{Str::camel($key)});
             }
         );
     }
