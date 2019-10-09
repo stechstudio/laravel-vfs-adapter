@@ -245,4 +245,13 @@ class FileTests extends TestCase
         $file->delete();
         $this->assertFalse($this->filesystem->has('file.txt'));
     }
+
+    /** @test */
+    public function ensure_we_can_delete_a_nested_directory()
+    {
+        $this->filesystem->createDir('files/dir/nested');
+
+        $this->assertTrue($this->filesystem->deleteDir('files/dir'));
+        $this->assertFalse($this->filesystem->has('files/dir'));
+    }
 }
