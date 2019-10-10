@@ -133,6 +133,12 @@ class VirtualFilesystemAdapter extends Local {
      */
     protected function deleteFileInfoObject(SplFileInfo $file)
     {
+        if ($file->getType() === 'dir') {
+            rmdir($file->getPathname());
+
+            return;
+        }
+
         unlink($file->getPathname());
     }
 }
