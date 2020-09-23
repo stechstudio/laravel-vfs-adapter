@@ -34,7 +34,7 @@
     "require": {
         "php": ">=7.0.0",
         "league/flysystem": "^1.0",
-        "illuminate/support": "^5.1 || ^6.0 || ^7.0",
+        "illuminate/support": "^5.1 || ^6.0 || ^7.0 || ^8.0",
         "mikey179/vfsstream": "^1.6"
     },
     "require-dev": {
